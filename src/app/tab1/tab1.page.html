@@ -1,0 +1,84 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Sporting
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <ion-img alt="Welcome to Sporting" src="assets/sporting_front.png" />
+    <ion-card-header>
+      <ion-card-title>Welcome to the Lions Den</ion-card-title>
+      <ion-card-subtitle>SCP</ion-card-subtitle>
+    </ion-card-header>
+
+    <ion-card-content>
+      Sporting Clube de Portugal, otherwise referred to as Sporting CP or simply Sporting, is a Portuguese sports club
+      based in Lisbon. Having various sports departments and sporting disciplines,
+      it is best known for its men's professional football team playing in the Primeira Liga, the top flight of
+      Portuguese football.
+    </ion-card-content>
+  </ion-card>
+
+  <ion-list [inset]="true">
+    <ion-list-header>
+      <ion-label>About Sporting CP</ion-label>
+    </ion-list-header>
+
+    <ion-item>
+      <ion-thumbnail>
+        <ion-img alt="Logo" src="assets/logo.png" />
+      </ion-thumbnail>
+      <ion-label><a target="_blank" rel="noopener noreferrer" href="https://www.sporting.pt/">Official
+          Website</a></ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-thumbnail>
+        <ion-img alt="Logo ig" src="assets/ig_logo.png" />
+      </ion-thumbnail>
+      <ion-label><a target="_blank" rel="noopener noreferrer" href="https://www.instagram.com/sportingcp">Follow on
+          Instagram</a></ion-label>
+    </ion-item>
+
+    <ion-item>
+      
+      <ion-icon name="logo-youtube" item-start style="color: #FF0000"></ion-icon>
+      <ion-label ><a target="_blank" href="https://www.youtube.com/@SportingCP">Follow on Youtube</a></ion-label>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed" >
+
+    <ion-fab-button size="small">
+      <ion-icon name="add-circle-outline"></ion-icon>
+    </ion-fab-button>
+
+    <ion-fab-list side="top">
+
+      <ion-item href="https://ionicframework.com/docs/theming/basics">
+        <ion-label>Theme Your App</ion-label>
+        <ion-icon name="color-fill"></ion-icon>
+      </ion-item>
+
+      <ion-item href="https://ionicframework.com/docs/layout/structure">
+        <ion-label>Change Your App Layout</ion-label>
+        <ion-icon name="grid"></ion-icon>
+      </ion-item>
+
+      <ion-item href="https://ionicframework.com/docs/building/scaffolding">
+        <ion-label>Scaffold Out Your App</ion-label>
+        <ion-icon name="build"></ion-icon>
+      </ion-item>
+
+      <ion-item href="https://ionicframework.com/docs/">
+        <ion-label>Ionic Documentation</ion-label>
+        <ion-icon name="book"></ion-icon>
+      </ion-item>
+
+    </ion-fab-list>
+  </ion-fab>
+</ion-content>

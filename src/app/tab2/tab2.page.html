@@ -1,0 +1,40 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Players
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <swiper-container #swiper  (swiperslidechange)="onSlideChange()">
+    <swiper-slide *ngFor="let player of players">
+      <ion-card>
+        <img [src]="player.image" class="player-image">
+
+        <ion-card-header>
+          <ion-card-title>{{player.name}}</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>{{player.description}}</ion-card-content>
+
+        <ion-item>
+          <ion-icon name='trophy' item-start style="color:#d03e84"></ion-icon>
+          <ion-label>Trophies</ion-label>
+          <ion-badge item-end>{{player.trophies}}</ion-badge>
+        </ion-item>
+
+        <ion-item>
+          <ion-icon name='logo-instagram' item-start style="color:
+         #9f55ee"></ion-icon>
+          <ion-label>Followers</ion-label>
+          <ion-badge item-end>{{player.followers}}K</ion-badge>
+        </ion-item>
+      </ion-card>
+    </swiper-slide>
+  </swiper-container>
+
+  <ion-button expand="block" (click)="openMenu()">
+    Player Actions
+    </ion-button>
+</ion-content>

@@ -50,14 +50,14 @@ export const VIDEOS: Video[] = [
         url: "https://www.youtube.com/embed/tIYdFWiaito",
     },
     {
-        id: 7,
+        id: 8,
         name: "BACKSTAGE SPORTING | Sporting CP x SC Braga",
         description: "BACKSTAGE SPORTING | Sporting CP x SC Braga",
         image: "assets/jogo_braga.jpg",
         url: "https://www.youtube.com/embed/BqlKQNreSJM",
     },
     {
-        id: 8,
+        id: 9,
         name: "BACKSTAGE SPORTING | Sporting CP x FC Porto",
         description: "BACKSTAGE SPORTING | Sporting CP x FC Porto",
         image: "assets/jogo_porto.jpg",
